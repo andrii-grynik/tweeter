@@ -1,0 +1,27 @@
+.head {
+  height: 400px;
+  background-color: #fcccb6;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 100%
+}
+
+.head .name h2 {
+  color: white;
+  font-weight: 300;
+}
+
+.head .name h2 span {
+  font-weight: 600;
+}
+
+@media only screen and (min-width:1024px) {
+  .head {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    width: 500px
+  }
+}
