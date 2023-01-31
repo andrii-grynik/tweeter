@@ -7,12 +7,17 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
-    <!-- Get the special fonts -->
+    <!-- Get the special Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
    
+    <!-- Font Awesome addition -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -23,11 +28,51 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-Bar">
+      <div> 
+        <span class="logo">TWEETER</span> 
+      </div>
+      <footer>     
+        <button class='write'>
+          <span><b>Write</b> a new tweet</span>
+          <i class="fas fa-angle-double-down"></i>
+        </button>
+      </footer>
     </nav>
 
+    <header class="head">
+      <div>
+        <img src="/images/profile-hex.png"> 
+      </div>
+      <div class="name">
+        <h2>Andrii Grynik</h2>
+      </div>
+    </header>    
+
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <div class="error-message">
+        </div>
+
+          <form action="/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="submit-and-display">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+          </form>
+      </section>
+
+      <section class="tweet-container">
+      </section>
+
+      <div class="scroll-to-top">
+        <button title="To top">
+          <i class="fas fa-angle-double-up"></i>
+        </button>
+      </div>
+    </main>
   </body>
 </html>
