@@ -1,6 +1,6 @@
 .head {
   height: 400px;
-  background-color: #fcccb6;
+  background-color: #c63c21da;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .head .name h2 {
-  color: white;
+  color: rgb(31, 7, 7);
   font-weight: 300;
 }
 

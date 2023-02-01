@@ -24,7 +24,7 @@ article .tweet-head div:nth-child(2) {
 article:hover .tweet-head div:nth-child(2) {
   display: contents;
   font-size: 17px;
-  color: #b8b894;
+  color: #0a04c7;
   font-weight: 600;
 }
 
